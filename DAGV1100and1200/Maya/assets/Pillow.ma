@@ -1,44 +1,7 @@
 //Maya ASCII 2027 scene
-//Name: !mp_Room.ma
-//Last modified: Tue, Sep 15, 2026 02:58:40 PM
+//Name: Pillow.ma
+//Last modified: Tue, Sep 15, 2026 02:53:34 PM
 //Codeset: 1252
-file -rdi 1 -ns "Floor" -rfn "FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Floor.ma";
-file -rdi 1 -ns "BedFrame" -rfn "BedFrameRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/BedFrame.ma";
-file -rdi 1 -ns "Bookshelf_S" -rfn "Bookshelf_SRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Bookshelf_S.ma";
-file -rdi 1 -ns "Bookshelf_W" -rfn "Bookshelf_WRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Bookshelf_W.ma";
-file -rdi 1 -ns "Chair" -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Chair.ma";
-file -rdi 1 -ns "Door" -rfn "DoorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Door.ma";
-file -rdi 1 -ns "Mattress" -rfn "MattressRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Mattress.ma";
-file -rdi 1 -ns "Monitor" -rfn "MonitorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Monitor.ma";
-file -rdi 1 -ns "Nightstand" -rfn "NightstandRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Nightstand.ma";
-file -rdi 1 -ns "Pillow" -rfn "PillowRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Pillow.ma";
-file -rdi 1 -ns "Shelf1" -rfn "Shelf1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf1.ma";
-file -rdi 1 -ns "Shelf2" -rfn "Shelf2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf2.ma";
-file -rdi 1 -ns "Shelf3" -rfn "Shelf3RN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf3.ma";
-file -rdi 1 -ns "Wall_N" -rfn "Wall_NRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_N.ma";
-file -rdi 1 -ns "Wall_S" -rfn "Wall_SRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_S.ma";
-file -rdi 1 -ns "Wall_W" -rfn "Wall_WRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_W.ma";
-file -r -ns "Floor" -dr 1 -rfn "FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Floor.ma";
-file -r -ns "BedFrame" -dr 1 -rfn "BedFrameRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/BedFrame.ma";
-file -r -ns "Bookshelf_S" -dr 1 -rfn "Bookshelf_SRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Bookshelf_S.ma";
-file -r -ns "Bookshelf_W" -dr 1 -rfn "Bookshelf_WRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Bookshelf_W.ma";
-file -r -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Chair.ma";
-file -r -ns "Door" -dr 1 -rfn "DoorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Door.ma";
-file -r -ns "Mattress" -dr 1 -rfn "MattressRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Mattress.ma";
-file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Monitor.ma";
-file -r -ns "Nightstand" -dr 1 -rfn "NightstandRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Nightstand.ma";
-file -r -ns "Pillow" -dr 1 -rfn "PillowRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Pillow.ma";
-file -r -ns "Shelf1" -dr 1 -rfn "Shelf1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf1.ma";
-file -r -ns "Shelf2" -dr 1 -rfn "Shelf2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf2.ma";
-file -r -ns "Shelf3" -dr 1 -rfn "Shelf3RN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf3.ma";
-file -r -ns "Wall_N" -dr 1 -rfn "Wall_NRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_N.ma";
-file -r -ns "Wall_S" -dr 1 -rfn "Wall_SRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_S.ma";
-file -r -ns "Wall_W" -dr 1 -rfn "Wall_WRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_W.ma";
 requires maya "2027";
 requires "mtoa" "5.6.1.1";
 currentUnit -l centimeter -a degree -t film;
@@ -47,29 +10,29 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "253EA0A1-41C3-ABC3-92DE-5D871A2B952B";
+fileInfo "UUID" "7311F3F9-49F2-26AE-F9B4-B5919D0077C0";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
-	rename -uid "55FAC390-4B29-6BAA-3DDE-4B915A732CA6";
+	rename -uid "5A89EB56-419D-C060-2EC0-D09E4CB6A905";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.918954769896374 11.234031199816339 12.287813160666108 ;
-	setAttr ".r" -type "double3" -21.338352729601386 56.199999999999683 0 ;
+	setAttr ".t" -type "double3" 28 21 28 ;
+	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
-	rename -uid "E869DC64-4E55-2690-A6BB-C3A800F9349E";
+	rename -uid "6C18676C-4573-F664-0FD0-61A08C4BEF19";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 25.945524895058231;
+	setAttr ".coi" 44.82186966202994;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
-	rename -uid "E1DFBE65-4543-7E85-DBCB-C6BCD747BF9C";
+	rename -uid "CEA75C79-43F8-DC04-54E3-6681B4DFBC50";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 1000.1 0 ;
 	setAttr ".r" -type "double3" -90 0 0 ;
 createNode camera -s -n "topShape" -p "top";
-	rename -uid "44F2B2DA-4C61-ED0B-B32F-83B518749776";
+	rename -uid "28AC209B-424D-FCED-4537-528EF39EBC21";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
@@ -81,11 +44,11 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "front";
-	rename -uid "4FF5FA92-4F55-AEB5-AB7F-6DA7FA89F209";
+	rename -uid "6CCE6B96-4D46-68C7-A945-CA98B33EDAA4";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 0 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
-	rename -uid "A6ED8760-4AC9-DE3C-1BDC-498BDC14C092";
+	rename -uid "FD17EE42-445D-C69B-0C7D-D99B28C10CDD";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
@@ -97,12 +60,12 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "side";
-	rename -uid "55EAC1D8-4DD1-6FAE-5C5B-A4B5F68389CF";
+	rename -uid "4F454726-4846-DD75-46BF-1E95AD520837";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1000.1 0 0 ;
 	setAttr ".r" -type "double3" 0 90 0 ;
 createNode camera -s -n "sideShape" -p "side";
-	rename -uid "7025A6D4-477A-1243-8331-33AD78282D70";
+	rename -uid "B1AD01A6-4253-082C-EBFE-33A06B4C727E";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
@@ -113,26 +76,228 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
+createNode transform -n "Pillow";
+	rename -uid "D7E6FCC8-485C-069B-A537-3FB90D25DF88";
+	setAttr ".rp" -type "double3" -4.0000001192092896 4.975 -3.5 ;
+	setAttr ".sp" -type "double3" -4.0000001192092896 4.975 -3.5 ;
+createNode mesh -n "PillowShape" -p "Pillow";
+	rename -uid "01DB9044-4C7B-5FAF-24D5-ED9CABB951CF";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr -s 6 ".gtag";
+	setAttr ".gtag[0].gtagnm" -type "string" "back";
+	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "f[5:53]";
+	setAttr ".gtag[1].gtagnm" -type "string" "bottom";
+	setAttr ".gtag[1].gtagcmp" -type "componentList" 1 "f[1]";
+	setAttr ".gtag[2].gtagnm" -type "string" "front";
+	setAttr ".gtag[2].gtagcmp" -type "componentList" 1 "f[0]";
+	setAttr ".gtag[3].gtagnm" -type "string" "left";
+	setAttr ".gtag[3].gtagcmp" -type "componentList" 1 "f[2]";
+	setAttr ".gtag[4].gtagnm" -type "string" "right";
+	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[3]";
+	setAttr ".gtag[5].gtagnm" -type "string" "top";
+	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[4]";
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 152 ".uvst[0].uvsp[0:151]" -type "float2" 0.41919416 0.088388346
+		 0.41919416 0.95580584 0.58080584 0.088388346 0.41919419 0.79419416 0.58080584 0.95580578
+		 0.33080581 0.088388339 0.41919419 0.16161165 0.33080581 0.16161165 0.58080578 0.66161168
+		 0.41919419 0.66161168 0.58080584 0.58838832 0.41919416 0.58838832 0.83080584 0.16161165
+		 0.58080578 0.45580584 0.41919419 0.45580584 0.16919416 0.16161165 0.58080584 0.29419419
+		 0.41919416 0.29419419 0.66919422 0.16161165 0.58080578 0.16161165 0.58080578 0.79419416
+		 0.83080584 0.088388346 0.66919416 0.088388346 0.16919416 0.088388346 0 0 0 0.49999994
+		 0 1 1 0 1 0.49999994 1 1 0 0 0 0.5 0 1 1 0 1 0.5 1 1 0 0 0 0.5 0 1 1 0 1 0.50000006
+		 1 1 0 0 0 0.50000006 0 1 1 0 1 0.49999994 1 1 0 0 0 0.49999988 0 1 1 0 1 0.5 1 1
+		 0 0 0 0.5 0 1 1 0 1 0.50000006 1 1 0 0 0 0.5 0 1 1 0 1 0.49999994 1 1 0 0 0 0.5 0
+		 1 1 0 1 0.50000006 1 1 0 0 0 0.50000006 0 1 1 0 1 0.50000006 1 1 0 0 0 0.49999988
+		 0 1 1 0 1 0.49999994 1 1 0 0 0 0.49999988 0 1 1 0 1 0.5 1 1 0 0 0 0.5 0 1 1 0 1 0.5
+		 1 1 0.92581171 0.48398021 0.99999976 0.99999976 0.48398009 0.92581171 0.57735008
+		 0.57734996 0 0.73205042 0.32225859 0.32225841 0.73205066 0 0.67774105 0.32225862
+		 0.99999976 0.7320506 0.51601958 0.92581177 0.42264956 0.57735026 0 0.99999976 0.07418786
+		 0.48398018 0.26794907 0 0.48398015 0.074187919 0.99999976 0 0.92581147 0.51601964
+		 0.57735002 0.42264977 0.7320503 0.99999976 0.32225835 0.67774129 0 0.26794919 0.67774117
+		 0.67774129 0.26794943 0.99999976 0.074188128 0.51601952 0.42264974 0.42264989 0 0
+		 0.51601964 0.074188024 0.99999976 0.26794925 0.67774099 0.32225844 0.99999976 0.73205054
+		 0.51601958 0.92581165 0.42264926 0.57735014 0 0.99999976 0.074187785 0.48398009 0.26794869
+		 0 0.92581195 0.48398027 0.99999976 0.99999976 0.48398015 0.92581165 0.57735062 0.57735008
+		 0 0.73205054 0.32225871 0.32225844 0.73205107 0 0.67774093 0.67774159 0.26794851
+		 0.99999976 0.074187681 0.51601964 0.42264923 0.42264959 0 0 0.51601958 0.074188329
+		 0.99999976 0.26794961 0.48398012 0.074188381 0.99999976 0 0.92581218 0.51601958 0.5773505
+		 0.42264986 0.73205137 0.99999976 0.32225895 0.67774159 0 0.2679497;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 56 ".pt[0:55]" -type "float3"  0 0.1 0 0 0.1 0 0 0.1 0 0 
+		0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 
+		0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 
+		0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 
+		0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 
+		0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 0 0.1 0 
+		0 0.1 0;
+	setAttr -s 56 ".vt[0:55]"  -3.7343483 5.125 -4.17215729 -3.55824423 4.80177641 -4.18756437
+		 -3.76516247 4.80177641 -4.52436543 -4.55443907 4.94822359 -4.10040855 -4.37833452 5.125 -4.11581564
+		 -3.59085083 4.94822359 -2.53197598 -3.7343483 4.625 -4.17215729 -4.40914869 4.80177641 -4.46802425
+		 -4.23483753 4.80177641 -2.47563457 -3.621665 5.125 -2.88418436 -3.59085083 4.80177641 -2.53197598
+		 -4.2656517 4.625 -2.82784247 -3.76516223 4.94822359 -4.52436543 -3.621665 4.625 -2.88418436
+		 -4.44175577 4.80177641 -2.81243539 -3.44556117 4.94822359 -2.89959145 -4.44175577 4.94822359 -2.81243563
+		 -4.40914869 4.94822359 -4.46802425 -4.23483753 4.94822359 -2.47563457 -3.55824423 4.94822359 -4.18756437
+		 -4.37833452 4.625 -4.11581564 -4.2656517 5.125 -2.82784247 -4.55443907 4.80177641 -4.10040855
+		 -3.44556117 4.80177641 -2.89959121 -4.24705362 4.69508219 -2.61526632 -3.60306716 4.69508219 -2.67160797
+		 -4.35334206 4.80177641 -2.60596704 -4.35334206 4.94822359 -2.60596704 -4.37194014 4.69508219 -2.81854343
+		 -4.48462296 4.69508219 -4.10651684 -3.51537704 4.69508219 -2.89348316 -3.62806034 4.69508219 -4.18145657
+		 -3.49677873 4.80177641 -2.68090653 -3.49677896 4.94822359 -2.68090677 -4.24705362 5.054917812 -2.61526632
+		 -3.60306716 5.054917812 -2.67160797 -4.37194014 5.054917812 -2.81854391 -4.48462296 5.054917812 -4.10651684
+		 -3.51537704 5.054917812 -2.89348316 -3.62806034 5.054917812 -4.18145657 -4.3969326 5.054917812 -4.32839203
+		 -3.75294614 5.054917812 -4.38473368 -4.50322104 4.94822359 -4.31909323 -4.50322104 4.80177641 -4.31909323
+		 -3.64665818 4.94822359 -4.39403296 -3.64665842 4.80177641 -4.39403296 -4.3969326 4.69508219 -4.32839203
+		 -3.75294638 4.69508219 -4.38473368 -4.33180857 4.72128296 -2.66045213 -3.52744675 4.72128296 -2.73082447
+		 -4.33180857 5.028717041 -2.66045213 -3.52744675 5.028717041 -2.73082471 -4.47255325 5.028717041 -4.26917553
+		 -3.66819191 5.028717041 -4.33954811 -4.47255325 4.72128296 -4.26917553 -3.66819191 4.72128296 -4.33954811;
+	setAttr -s 108 ".ed[0:107]"  8 10 1 10 5 1 5 18 1 18 8 1 13 11 1 11 20 1
+		 20 6 1 6 13 1 14 16 1 16 3 1 3 22 1 22 14 1 23 1 1 1 19 1 19 15 1 15 23 1 21 9 1
+		 9 0 1 0 4 1 4 21 1 17 12 1 12 2 1 2 7 1 7 17 1 8 24 1 24 25 1 25 10 1 24 11 1 13 25 1
+		 14 26 1 26 27 1 27 16 1 26 8 1 18 27 1 11 28 1 28 29 1 29 20 1 28 14 1 22 29 1 23 30 1
+		 30 31 1 31 1 1 30 13 1 6 31 1 10 32 1 32 33 1 33 5 1 32 23 1 15 33 1 21 34 1 34 35 1
+		 35 9 1 34 18 1 5 35 1 16 36 1 36 37 1 37 3 1 36 21 1 4 37 1 9 38 1 38 39 1 39 0 1
+		 38 15 1 19 39 1 17 40 1 40 41 1 41 12 1 40 4 1 0 41 1 3 42 1 42 43 1 43 22 1 42 17 1
+		 7 43 1 12 44 1 44 45 1 45 2 1 44 19 1 1 45 1 20 46 1 46 47 1 47 6 1 46 7 1 2 47 1
+		 26 48 1 48 24 1 28 48 1 32 49 1 49 30 1 25 49 1 34 50 1 50 27 1 36 50 1 35 51 1 51 38 1
+		 33 51 1 40 52 1 52 37 1 42 52 1 41 53 1 53 44 1 39 53 1 43 54 1 54 29 1 46 54 1 45 55 1
+		 55 47 1 31 55 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 0 2 19 6
+		f 4 4 5 6 7
+		mu 0 4 4 1 3 20
+		f 4 8 9 10 11
+		mu 0 4 5 7 15 23
+		f 4 12 13 14 15
+		mu 0 4 22 21 12 18
+		f 4 16 17 18 19
+		mu 0 4 17 16 13 14
+		f 4 20 21 22 23
+		mu 0 4 11 10 8 9
+		f 4 24 25 26 -1
+		mu 0 4 24 25 28 27
+		f 4 27 -5 28 -26
+		mu 0 4 25 26 29 28
+		f 4 29 30 31 -9
+		mu 0 4 30 31 34 33
+		f 4 32 -4 33 -31
+		mu 0 4 31 32 35 34
+		f 4 34 35 36 -6
+		mu 0 4 36 37 40 39
+		f 4 37 -12 38 -36
+		mu 0 4 37 38 41 40
+		f 4 39 40 41 -13
+		mu 0 4 42 43 46 45
+		f 4 42 -8 43 -41
+		mu 0 4 43 44 47 46
+		f 4 44 45 46 -2
+		mu 0 4 48 49 52 51
+		f 4 47 -16 48 -46
+		mu 0 4 49 50 53 52
+		f 4 49 50 51 -17
+		mu 0 4 54 55 58 57
+		f 4 52 -3 53 -51
+		mu 0 4 55 56 59 58
+		f 4 54 55 56 -10
+		mu 0 4 60 61 64 63
+		f 4 57 -20 58 -56
+		mu 0 4 61 62 65 64
+		f 4 59 60 61 -18
+		mu 0 4 66 67 70 69
+		f 4 62 -15 63 -61
+		mu 0 4 67 68 71 70
+		f 4 64 65 66 -21
+		mu 0 4 72 73 76 75
+		f 4 67 -19 68 -66
+		mu 0 4 73 74 77 76
+		f 4 69 70 71 -11
+		mu 0 4 78 79 82 81
+		f 4 72 -24 73 -71
+		mu 0 4 79 80 83 82
+		f 4 74 75 76 -22
+		mu 0 4 84 85 88 87
+		f 4 77 -14 78 -76
+		mu 0 4 85 86 89 88
+		f 4 79 80 81 -7
+		mu 0 4 90 91 94 93
+		f 4 82 -23 83 -81
+		mu 0 4 91 92 95 94
+		f 4 -25 -33 84 85
+		mu 0 4 96 97 98 99
+		f 4 -30 -38 86 -85
+		mu 0 4 98 100 101 99
+		f 4 -35 -28 -86 -87
+		mu 0 4 101 102 96 99
+		f 4 -40 -48 87 88
+		mu 0 4 103 104 105 106
+		f 4 -45 -27 89 -88
+		mu 0 4 105 107 108 106
+		f 4 -29 -43 -89 -90
+		mu 0 4 108 109 103 106
+		f 4 -34 -53 90 91
+		mu 0 4 110 111 112 113
+		f 4 -50 -58 92 -91
+		mu 0 4 112 114 115 113
+		f 4 -55 -32 -92 -93
+		mu 0 4 115 116 110 113
+		f 4 -60 -52 93 94
+		mu 0 4 117 118 119 120
+		f 4 -54 -47 95 -94
+		mu 0 4 119 121 122 120
+		f 4 -49 -63 -95 -96
+		mu 0 4 122 123 117 120
+		f 4 -59 -68 96 97
+		mu 0 4 124 125 126 127
+		f 4 -65 -73 98 -97
+		mu 0 4 126 128 129 127
+		f 4 -70 -57 -98 -99
+		mu 0 4 129 130 124 127
+		f 4 -75 -67 99 100
+		mu 0 4 131 132 133 134
+		f 4 -69 -62 101 -100
+		mu 0 4 133 135 136 134
+		f 4 -64 -78 -101 -102
+		mu 0 4 136 137 131 134
+		f 4 -39 -72 102 103
+		mu 0 4 138 139 140 141
+		f 4 -74 -83 104 -103
+		mu 0 4 140 142 143 141
+		f 4 -80 -37 -104 -105
+		mu 0 4 143 144 138 141
+		f 4 -84 -77 105 106
+		mu 0 4 145 146 147 148
+		f 4 -79 -42 107 -106
+		mu 0 4 147 149 150 148
+		f 4 -44 -82 -107 -108
+		mu 0 4 150 151 145 148;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "25090345-43C1-71A6-0AFA-D58DA713B8CA";
+	rename -uid "55D02EA8-4388-9740-4AE8-84BC1277215C";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "F91FAD6E-4A6F-33F8-5EA8-E1A030598814";
+	rename -uid "FE5E187A-43B4-AD91-47B6-139E5D3EEA56";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "1F3E2A69-4E74-471A-7FB8-ACABC08B6153";
+	rename -uid "40F45B02-486A-D7AF-AEE1-31B320B04ABC";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "49005015-46B6-647B-9295-1A834D330929";
+	rename -uid "E48B5685-41F7-3938-29CD-5781EC04080F";
 createNode displayLayer -n "defaultLayer";
-	rename -uid "6C71CBAE-4C2D-B017-8D69-9497067F6A4C";
+	rename -uid "1F4BBD7C-4D54-F26B-18AF-AC9E5CA29378";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "62C2B698-49EA-AF7C-F4DF-7DBDC7A0D62E";
+	rename -uid "1D8A2458-4093-87A9-B78A-9D856A3508CE";
 createNode renderLayer -n "defaultRenderLayer";
-	rename -uid "E9033806-4AB5-2350-B461-78B3ECFC5580";
+	rename -uid "EA79708D-489D-8F4E-2690-DB95E0DA816F";
 	setAttr ".g" yes;
 createNode script -n "uiConfigurationScriptNode";
-	rename -uid "2A51F151-47EB-BF86-05DD-D9BF896C337A";
+	rename -uid "19D8EA55-4A04-C67F-8DB4-AE935CA72E86";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
@@ -176,141 +341,9 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
-	rename -uid "ED2F6A28-4D9C-F2EA-9527-158B39E7C6BD";
+	rename -uid "1296588F-4D82-4BA3-660B-5B9831458F84";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
-createNode reference -n "FloorRN";
-	rename -uid "30587FB5-4A43-D41D-C9B6-7681FA974226";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Floor.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"FloorRN"
-		"FloorRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "BedFrameRN";
-	rename -uid "9A4FD4CF-42EB-E39E-05F5-F384389E19FA";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/BedFrame.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"BedFrameRN"
-		"BedFrameRN" 0;
-lockNode -l 1 ;
-createNode reference -n "Bookshelf_SRN";
-	rename -uid "DED253F0-42FA-85E1-5DF5-1EB9119F418D";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Bookshelf_S.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Bookshelf_SRN"
-		"Bookshelf_SRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Bookshelf_WRN";
-	rename -uid "24D60EC2-45C9-86D1-BCCD-D9A7BF11357B";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Bookshelf_W.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Bookshelf_WRN"
-		"Bookshelf_WRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "ChairRN";
-	rename -uid "10459BEE-4DB3-FD1A-8784-03A9D5769EF2";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Chair.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"ChairRN"
-		"ChairRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "DoorRN";
-	rename -uid "4FCF2B55-4194-0A85-0A99-B2ABE2BA1CD2";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Door.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"DoorRN"
-		"DoorRN" 1
-		2 "|Door:Door" "rotate" " -type \"double3\" 0 75 0";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "MattressRN";
-	rename -uid "E841936F-426A-B6FA-D9D8-8992EC91CBF6";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Mattress.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"MattressRN"
-		"MattressRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "MonitorRN";
-	rename -uid "9EF8D34E-4ACF-B14A-6A12-D5AE125D2B03";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Monitor.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"MonitorRN"
-		"MonitorRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "NightstandRN";
-	rename -uid "E4376036-4887-BEE0-1C53-FCABA810B596";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Nightstand.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"NightstandRN"
-		"NightstandRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "PillowRN";
-	rename -uid "060DECC5-4EDF-C3A4-5EC3-A98CCCE22361";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Pillow.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"PillowRN"
-		"PillowRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Shelf1RN";
-	rename -uid "A38D78D7-4492-B89C-EB1D-AFA028DCD48F";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf1.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Shelf1RN"
-		"Shelf1RN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Shelf2RN";
-	rename -uid "D4E4D301-4C5A-AB18-530C-B7ADAB2F3C63";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf2.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Shelf2RN"
-		"Shelf2RN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Shelf3RN";
-	rename -uid "2F29CAD6-4820-F2FF-0A30-0B8E7335B748";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Shelf3.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Shelf3RN"
-		"Shelf3RN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Wall_NRN";
-	rename -uid "9179C354-4F1D-CCE3-7140-F08A2776DB50";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_N.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Wall_NRN"
-		"Wall_NRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Wall_SRN";
-	rename -uid "909967C4-48C8-670A-6073-ECA836B621EA";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_S.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Wall_SRN"
-		"Wall_SRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Wall_WRN";
-	rename -uid "861A77FD-47A8-5A87-4DB6-C8A56BF8BB11";
-	setAttr ".fn[0]" -type "string" "C:/Users/11045188/Documents/Essentials/DAGV1100and1200/Maya/assets/Wall_W.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Wall_WRN"
-		"Wall_WRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "sharedReferenceNode";
-	rename -uid "A4497027-4230-86ED-F7EB-EDA3B35DE359";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"sharedReferenceNode";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -329,7 +362,6 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 10 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -337,7 +369,6 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 60 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -365,21 +396,6 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr "sharedReferenceNode.sr" "FloorRN.sr";
-connectAttr "sharedReferenceNode.sr" "BedFrameRN.sr";
-connectAttr "sharedReferenceNode.sr" "Bookshelf_SRN.sr";
-connectAttr "sharedReferenceNode.sr" "Bookshelf_WRN.sr";
-connectAttr "sharedReferenceNode.sr" "ChairRN.sr";
-connectAttr "sharedReferenceNode.sr" "DoorRN.sr";
-connectAttr "sharedReferenceNode.sr" "MattressRN.sr";
-connectAttr "sharedReferenceNode.sr" "MonitorRN.sr";
-connectAttr "sharedReferenceNode.sr" "NightstandRN.sr";
-connectAttr "sharedReferenceNode.sr" "PillowRN.sr";
-connectAttr "sharedReferenceNode.sr" "Shelf1RN.sr";
-connectAttr "sharedReferenceNode.sr" "Shelf2RN.sr";
-connectAttr "sharedReferenceNode.sr" "Shelf3RN.sr";
-connectAttr "sharedReferenceNode.sr" "Wall_NRN.sr";
-connectAttr "sharedReferenceNode.sr" "Wall_SRN.sr";
-connectAttr "sharedReferenceNode.sr" "Wall_WRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of !mp_Room.ma
+connectAttr "PillowShape.iog" ":initialShadingGroup.dsm" -na;
+// End of Pillow.ma
