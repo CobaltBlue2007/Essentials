@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Remote.ma
-//Last modified: Wed, Sep 30, 2026 09:50:20 PM
+//Last modified: Wed, Sep 30, 2026 10:59:36 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B1F2763A-4ACD-C2B7-278E-76A19A6563DB";
+fileInfo "UUID" "3003FD29-40F6-8267-CBB6-B1B86715D234";
 createNode transform -s -n "persp";
 	rename -uid "D46764B9-4090-3CBF-C1FF-8B92987B9FDB";
 	setAttr ".v" no;
@@ -82,7 +82,9 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "Base";
+createNode transform -n "Remote";
+	rename -uid "65582BA5-41AC-FECD-0EDB-5A83EE0D80A3";
+createNode transform -n "Base" -p "Remote";
 	rename -uid "FCEB0652-4708-B207-68C4-E0A985A7DA87";
 	setAttr ".rp" -type "double3" 0 0.05 0 ;
 	setAttr ".sp" -type "double3" 0 0.05 0 ;
@@ -97,10 +99,10 @@ createNode mesh -n "BaseShape" -p "Base";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "ButtonP";
+createNode transform -n "ButtonP" -p "Remote";
 	rename -uid "12A70F09-40A4-5DD8-AEF6-90AFDDC5FB3C";
-	setAttr ".t" -type "double3" 0.3 0.10000000149011612 0 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.1 ;
+	setAttr ".rp" -type "double3" 0.3 0.10000000149011612 0 ;
+	setAttr ".sp" -type "double3" 0.3 0.10000000149011612 0 ;
 createNode mesh -n "ButtonPShape" -p "ButtonP";
 	rename -uid "DF18689F-4B00-394A-1BBA-CAA826058717";
 	setAttr -k off ".v";
@@ -112,10 +114,10 @@ createNode mesh -n "ButtonPShape" -p "ButtonP";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "ButtonA";
+createNode transform -n "ButtonA" -p "Remote";
 	rename -uid "EF2ED997-4F81-CFD6-976E-A6AF371D13B4";
-	setAttr ".t" -type "double3" 0.17 0.10000000149011612 0 ;
-	setAttr ".s" -type "double3" 0.15 0.05 0.15 ;
+	setAttr ".rp" -type "double3" 0.17 0.10000000149011612 0 ;
+	setAttr ".sp" -type "double3" 0.17 0.10000000149011612 0 ;
 createNode mesh -n "ButtonAShape" -p "ButtonA";
 	rename -uid "349BA716-4048-D3F9-5300-9092A4A3348B";
 	setAttr -k off ".v";
@@ -176,13 +178,14 @@ createNode mesh -n "polySurfaceShape1" -p "ButtonA";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "Numbers";
+createNode transform -n "Numbers" -p "Remote";
 	rename -uid "176F5D77-4003-0BD3-B16A-DAB3C35C84A9";
-	setAttr ".t" -type "double3" 0.04 0 0 ;
+	setAttr ".rp" -type "double3" 0.04 0 0 ;
+	setAttr ".sp" -type "double3" 0.04 0 0 ;
 createNode transform -n "Button1" -p "Numbers";
 	rename -uid "1C5C68DB-4407-D886-EB65-30966AA62320";
-	setAttr ".t" -type "double3" 0 0.10000000149011612 -0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" 0.04 0.10000000149011612 -0.06 ;
+	setAttr ".sp" -type "double3" 0.04 0.10000000149011612 -0.06 ;
 createNode mesh -n "ButtonShape1" -p "Button1";
 	rename -uid "3CF14AE5-4E27-4012-5097-A2BADF7A32F4";
 	setAttr -k off ".v";
@@ -216,6 +219,16 @@ createNode mesh -n "ButtonShape1" -p "Button1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.27752379 0.57499999 -0.2975238 
+		0.27752379 0.33752367 -0.53500003 0.51499999 0.33752367 -0.2975238 -0.435 0.33752367 
+		-0.2975238 -0.19752379 0.33752367 -0.53500003 -0.19752379 0.57499999 -0.2975238 0.51499999 
+		-0.13752379 -0.2975238 0.27752379 -0.13752379 -0.53500003 0.27752379 -0.375 -0.2975238 
+		-0.19752379 -0.375 -0.2975238 -0.19752379 -0.13752379 -0.53500003 -0.435 -0.13752379 
+		-0.2975238 0.51499999 -0.13752379 0.17752378 0.27752379 -0.375 0.17752378 0.27752379 
+		-0.13752379 0.41499999 -0.19752379 -0.13752379 0.41499999 -0.19752379 -0.375 0.17752378 
+		-0.435 -0.13752379 0.17752378 0.51499999 0.33752367 0.17752378 0.27752379 0.33752367 
+		0.41499999 0.27752379 0.57499999 0.17752378 -0.19752379 0.57499999 0.17752378 -0.19752379 
+		0.33752367 0.41499999 -0.435 0.33752367 0.17752378;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -288,8 +301,8 @@ createNode mesh -n "ButtonShape1" -p "Button1";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button2" -p "Numbers";
 	rename -uid "07E710D8-4B61-FF1D-C797-E08C77EA0A0F";
-	setAttr ".t" -type "double3" 0 0.10000000149011612 0 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" 0.04 0.10000000149011612 0 ;
+	setAttr ".sp" -type "double3" 0.04 0.10000000149011612 0 ;
 createNode mesh -n "ButtonShape2" -p "Button2";
 	rename -uid "42445067-4D3F-34CA-4D22-5FA32D4BBB78";
 	setAttr -k off ".v";
@@ -302,8 +315,8 @@ createNode mesh -n "ButtonShape2" -p "Button2";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "Button3" -p "Numbers";
 	rename -uid "2A17242C-4C02-5B72-B52D-9B92DA6D892E";
-	setAttr ".t" -type "double3" 0 0.10000000149011612 0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" 0.04 0.10000000149011612 0.06 ;
+	setAttr ".sp" -type "double3" 0.04 0.10000000149011612 0.06 ;
 createNode mesh -n "ButtonShape3" -p "Button3";
 	rename -uid "E0CCBBBC-482B-ACD0-8200-339B26ABA59F";
 	setAttr -k off ".v";
@@ -337,6 +350,16 @@ createNode mesh -n "ButtonShape3" -p "Button3";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.27752379 0.57499999 -0.17752378 
+		0.27752379 0.33752367 -0.41499999 0.51499999 0.33752367 -0.17752378 -0.435 0.33752367 
+		-0.17752378 -0.19752379 0.33752367 -0.41499999 -0.19752379 0.57499999 -0.17752378 
+		0.51499999 -0.13752379 -0.17752378 0.27752379 -0.13752379 -0.41499999 0.27752379 
+		-0.375 -0.17752378 -0.19752379 -0.375 -0.17752378 -0.19752379 -0.13752379 -0.41499999 
+		-0.435 -0.13752379 -0.17752378 0.51499999 -0.13752379 0.2975238 0.27752379 -0.375 
+		0.2975238 0.27752379 -0.13752379 0.53500003 -0.19752379 -0.13752379 0.53500003 -0.19752379 
+		-0.375 0.2975238 -0.435 -0.13752379 0.2975238 0.51499999 0.33752367 0.2975238 0.27752379 
+		0.33752367 0.53500003 0.27752379 0.57499999 0.2975238 -0.19752379 0.57499999 0.2975238 
+		-0.19752379 0.33752367 0.53500003 -0.435 0.33752367 0.2975238;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -409,8 +432,8 @@ createNode mesh -n "ButtonShape3" -p "Button3";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button4" -p "Numbers";
 	rename -uid "FD7A368F-4485-4E84-F010-BCA006EB8780";
-	setAttr ".t" -type "double3" -0.060160637851626481 0.10000000149011612 0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.02016063785162648 0.10000000149011612 0.06 ;
+	setAttr ".sp" -type "double3" -0.02016063785162648 0.10000000149011612 0.06 ;
 createNode mesh -n "ButtonShape4" -p "Button4";
 	rename -uid "4B81CB8C-4A09-96FC-B175-40B0259CD988";
 	setAttr -k off ".v";
@@ -444,6 +467,16 @@ createNode mesh -n "ButtonShape4" -p "Button4";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.21736315 0.57499999 -0.17752378 
+		0.21736315 0.33752367 -0.41499999 0.45483935 0.33752367 -0.17752378 -0.49516064 0.33752367 
+		-0.17752378 -0.25768441 0.33752367 -0.41499999 -0.25768441 0.57499999 -0.17752378 
+		0.45483935 -0.13752379 -0.17752378 0.21736315 -0.13752379 -0.41499999 0.21736315 
+		-0.375 -0.17752378 -0.25768441 -0.375 -0.17752378 -0.25768441 -0.13752379 -0.41499999 
+		-0.49516064 -0.13752379 -0.17752378 0.45483935 -0.13752379 0.2975238 0.21736315 -0.375 
+		0.2975238 0.21736315 -0.13752379 0.53500003 -0.25768441 -0.13752379 0.53500003 -0.25768441 
+		-0.375 0.2975238 -0.49516064 -0.13752379 0.2975238 0.45483935 0.33752367 0.2975238 
+		0.21736315 0.33752367 0.53500003 0.21736315 0.57499999 0.2975238 -0.25768441 0.57499999 
+		0.2975238 -0.25768441 0.33752367 0.53500003 -0.49516064 0.33752367 0.2975238;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -516,8 +549,8 @@ createNode mesh -n "ButtonShape4" -p "Button4";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button5" -p "Numbers";
 	rename -uid "ACB0DCD7-4457-EAD9-F906-F887BA317B68";
-	setAttr ".t" -type "double3" -0.060160637851626481 0.10000000149011612 0 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.02016063785162648 0.10000000149011612 0 ;
+	setAttr ".sp" -type "double3" -0.02016063785162648 0.10000000149011612 0 ;
 createNode mesh -n "ButtonShape5" -p "Button5";
 	rename -uid "995DC9FA-4F9A-BD45-2286-78888AF34314";
 	setAttr -k off ".v";
@@ -551,6 +584,16 @@ createNode mesh -n "ButtonShape5" -p "Button5";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.21736315 0.57499999 -0.23752378 
+		0.21736315 0.33752367 -0.47499999 0.45483935 0.33752367 -0.23752378 -0.49516064 0.33752367 
+		-0.23752378 -0.25768441 0.33752367 -0.47499999 -0.25768441 0.57499999 -0.23752378 
+		0.45483935 -0.13752379 -0.23752378 0.21736315 -0.13752379 -0.47499999 0.21736315 
+		-0.375 -0.23752378 -0.25768441 -0.375 -0.23752378 -0.25768441 -0.13752379 -0.47499999 
+		-0.49516064 -0.13752379 -0.23752378 0.45483935 -0.13752379 0.23752378 0.21736315 
+		-0.375 0.23752378 0.21736315 -0.13752379 0.47499999 -0.25768441 -0.13752379 0.47499999 
+		-0.25768441 -0.375 0.23752378 -0.49516064 -0.13752379 0.23752378 0.45483935 0.33752367 
+		0.23752378 0.21736315 0.33752367 0.47499999 0.21736315 0.57499999 0.23752378 -0.25768441 
+		0.57499999 0.23752378 -0.25768441 0.33752367 0.47499999 -0.49516064 0.33752367 0.23752378;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -623,8 +666,8 @@ createNode mesh -n "ButtonShape5" -p "Button5";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button6" -p "Numbers";
 	rename -uid "D9482718-4793-7907-5F50-47A651452903";
-	setAttr ".t" -type "double3" -0.060160637851626481 0.10000000149011612 -0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.02016063785162648 0.10000000149011612 -0.06 ;
+	setAttr ".sp" -type "double3" -0.02016063785162648 0.10000000149011612 -0.06 ;
 createNode mesh -n "ButtonShape6" -p "Button6";
 	rename -uid "258D2D4F-48D2-E822-A324-75BE2A065E90";
 	setAttr -k off ".v";
@@ -658,6 +701,16 @@ createNode mesh -n "ButtonShape6" -p "Button6";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.21736315 0.57499999 -0.2975238 
+		0.21736315 0.33752367 -0.53500003 0.45483935 0.33752367 -0.2975238 -0.49516064 0.33752367 
+		-0.2975238 -0.25768441 0.33752367 -0.53500003 -0.25768441 0.57499999 -0.2975238 0.45483935 
+		-0.13752379 -0.2975238 0.21736315 -0.13752379 -0.53500003 0.21736315 -0.375 -0.2975238 
+		-0.25768441 -0.375 -0.2975238 -0.25768441 -0.13752379 -0.53500003 -0.49516064 -0.13752379 
+		-0.2975238 0.45483935 -0.13752379 0.17752378 0.21736315 -0.375 0.17752378 0.21736315 
+		-0.13752379 0.41499999 -0.25768441 -0.13752379 0.41499999 -0.25768441 -0.375 0.17752378 
+		-0.49516064 -0.13752379 0.17752378 0.45483935 0.33752367 0.17752378 0.21736315 0.33752367 
+		0.41499999 0.21736315 0.57499999 0.17752378 -0.25768441 0.57499999 0.17752378 -0.25768441 
+		0.33752367 0.41499999 -0.49516064 0.33752367 0.17752378;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -730,8 +783,8 @@ createNode mesh -n "ButtonShape6" -p "Button6";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button7" -p "Numbers";
 	rename -uid "755245D0-498D-F85E-262D-05AE55F24F37";
-	setAttr ".t" -type "double3" -0.12032127570325285 0.10000000149011612 0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.080321275703252842 0.10000000149011612 0.06 ;
+	setAttr ".sp" -type "double3" -0.080321275703252842 0.10000000149011612 0.06 ;
 createNode mesh -n "ButtonShape7" -p "Button7";
 	rename -uid "E41F26C7-41CE-B42A-E381-02984638B3B7";
 	setAttr -k off ".v";
@@ -765,6 +818,16 @@ createNode mesh -n "ButtonShape7" -p "Button7";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.15720251 0.57499999 -0.17752378 
+		0.15720251 0.33752367 -0.41499999 0.39467871 0.33752367 -0.17752378 -0.55532128 0.33752367 
+		-0.17752378 -0.31784505 0.33752367 -0.41499999 -0.31784505 0.57499999 -0.17752378 
+		0.39467871 -0.13752379 -0.17752378 0.15720251 -0.13752379 -0.41499999 0.15720251 
+		-0.375 -0.17752378 -0.31784505 -0.375 -0.17752378 -0.31784505 -0.13752379 -0.41499999 
+		-0.55532128 -0.13752379 -0.17752378 0.39467871 -0.13752379 0.2975238 0.15720251 -0.375 
+		0.2975238 0.15720251 -0.13752379 0.53500003 -0.31784505 -0.13752379 0.53500003 -0.31784505 
+		-0.375 0.2975238 -0.55532128 -0.13752379 0.2975238 0.39467871 0.33752367 0.2975238 
+		0.15720251 0.33752367 0.53500003 0.15720251 0.57499999 0.2975238 -0.31784505 0.57499999 
+		0.2975238 -0.31784505 0.33752367 0.53500003 -0.55532128 0.33752367 0.2975238;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -837,8 +900,8 @@ createNode mesh -n "ButtonShape7" -p "Button7";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button8" -p "Numbers";
 	rename -uid "9C08D172-47BB-FCDC-DE66-A6B17110A1F3";
-	setAttr ".t" -type "double3" -0.12032127570325285 0.10000000149011612 0 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.080321275703252842 0.10000000149011612 0 ;
+	setAttr ".sp" -type "double3" -0.080321275703252842 0.10000000149011612 0 ;
 createNode mesh -n "ButtonShape8" -p "Button8";
 	rename -uid "E08916DB-4B46-19E0-7806-F692419B4A4B";
 	setAttr -k off ".v";
@@ -872,6 +935,16 @@ createNode mesh -n "ButtonShape8" -p "Button8";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.15720251 0.57499999 -0.23752378 
+		0.15720251 0.33752367 -0.47499999 0.39467871 0.33752367 -0.23752378 -0.55532128 0.33752367 
+		-0.23752378 -0.31784505 0.33752367 -0.47499999 -0.31784505 0.57499999 -0.23752378 
+		0.39467871 -0.13752379 -0.23752378 0.15720251 -0.13752379 -0.47499999 0.15720251 
+		-0.375 -0.23752378 -0.31784505 -0.375 -0.23752378 -0.31784505 -0.13752379 -0.47499999 
+		-0.55532128 -0.13752379 -0.23752378 0.39467871 -0.13752379 0.23752378 0.15720251 
+		-0.375 0.23752378 0.15720251 -0.13752379 0.47499999 -0.31784505 -0.13752379 0.47499999 
+		-0.31784505 -0.375 0.23752378 -0.55532128 -0.13752379 0.23752378 0.39467871 0.33752367 
+		0.23752378 0.15720251 0.33752367 0.47499999 0.15720251 0.57499999 0.23752378 -0.31784505 
+		0.57499999 0.23752378 -0.31784505 0.33752367 0.47499999 -0.55532128 0.33752367 0.23752378;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -944,8 +1017,8 @@ createNode mesh -n "ButtonShape8" -p "Button8";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button9" -p "Numbers";
 	rename -uid "19B1832C-40AF-FC47-4BAA-0F8739A8A3C8";
-	setAttr ".t" -type "double3" -0.12032127570325285 0.10000000149011612 -0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.080321275703252842 0.10000000149011612 -0.06 ;
+	setAttr ".sp" -type "double3" -0.080321275703252842 0.10000000149011612 -0.06 ;
 createNode mesh -n "ButtonShape9" -p "Button9";
 	rename -uid "B80356F8-4B3E-2E11-5647-F5A7B9944309";
 	setAttr -k off ".v";
@@ -979,6 +1052,16 @@ createNode mesh -n "ButtonShape9" -p "Button9";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.15720251 0.57499999 -0.2975238 
+		0.15720251 0.33752367 -0.53500003 0.39467871 0.33752367 -0.2975238 -0.55532128 0.33752367 
+		-0.2975238 -0.31784505 0.33752367 -0.53500003 -0.31784505 0.57499999 -0.2975238 0.39467871 
+		-0.13752379 -0.2975238 0.15720251 -0.13752379 -0.53500003 0.15720251 -0.375 -0.2975238 
+		-0.31784505 -0.375 -0.2975238 -0.31784505 -0.13752379 -0.53500003 -0.55532128 -0.13752379 
+		-0.2975238 0.39467871 -0.13752379 0.17752378 0.15720251 -0.375 0.17752378 0.15720251 
+		-0.13752379 0.41499999 -0.31784505 -0.13752379 0.41499999 -0.31784505 -0.375 0.17752378 
+		-0.55532128 -0.13752379 0.17752378 0.39467871 0.33752367 0.17752378 0.15720251 0.33752367 
+		0.41499999 0.15720251 0.57499999 0.17752378 -0.31784505 0.57499999 0.17752378 -0.31784505 
+		0.33752367 0.41499999 -0.55532128 0.33752367 0.17752378;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -1051,8 +1134,8 @@ createNode mesh -n "ButtonShape9" -p "Button9";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button10" -p "Numbers";
 	rename -uid "01864EBD-4337-4765-060A-79B224E84FBD";
-	setAttr ".t" -type "double3" -0.18 0.10000000149011612 0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.13999999999999999 0.10000000149011612 0.06 ;
+	setAttr ".sp" -type "double3" -0.13999999999999999 0.10000000149011612 0.06 ;
 createNode mesh -n "ButtonShape10" -p "Button10";
 	rename -uid "5E8C8E92-4E29-B115-1773-7DA4682ABB82";
 	setAttr -k off ".v";
@@ -1086,6 +1169,17 @@ createNode mesh -n "ButtonShape10" -p "Button10";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.097523779 0.57499999 -0.17752378 
+		0.097523779 0.33752367 -0.41499999 0.33500001 0.33752367 -0.17752378 -0.61500001 
+		0.33752367 -0.17752378 -0.37752378 0.33752367 -0.41499999 -0.37752378 0.57499999 
+		-0.17752378 0.33500001 -0.13752379 -0.17752378 0.097523779 -0.13752379 -0.41499999 
+		0.097523779 -0.375 -0.17752378 -0.37752378 -0.375 -0.17752378 -0.37752378 -0.13752379 
+		-0.41499999 -0.61500001 -0.13752379 -0.17752378 0.33500001 -0.13752379 0.2975238 
+		0.097523779 -0.375 0.2975238 0.097523779 -0.13752379 0.53500003 -0.37752378 -0.13752379 
+		0.53500003 -0.37752378 -0.375 0.2975238 -0.61500001 -0.13752379 0.2975238 0.33500001 
+		0.33752367 0.2975238 0.097523779 0.33752367 0.53500003 0.097523779 0.57499999 0.2975238 
+		-0.37752378 0.57499999 0.2975238 -0.37752378 0.33752367 0.53500003 -0.61500001 0.33752367 
+		0.2975238;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -1158,8 +1252,8 @@ createNode mesh -n "ButtonShape10" -p "Button10";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button11" -p "Numbers";
 	rename -uid "6CA2FFDB-4D01-234B-DA56-29BA21D60B6F";
-	setAttr ".t" -type "double3" -0.18 0.10000000149011612 0 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.13999999999999999 0.10000000149011612 0 ;
+	setAttr ".sp" -type "double3" -0.13999999999999999 0.10000000149011612 0 ;
 createNode mesh -n "ButtonShape11" -p "Button11";
 	rename -uid "CDF2B4EF-48CC-F045-975F-F3BD7740F140";
 	setAttr -k off ".v";
@@ -1193,6 +1287,17 @@ createNode mesh -n "ButtonShape11" -p "Button11";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.097523779 0.57499999 -0.23752378 
+		0.097523779 0.33752367 -0.47499999 0.33500001 0.33752367 -0.23752378 -0.61500001 
+		0.33752367 -0.23752378 -0.37752378 0.33752367 -0.47499999 -0.37752378 0.57499999 
+		-0.23752378 0.33500001 -0.13752379 -0.23752378 0.097523779 -0.13752379 -0.47499999 
+		0.097523779 -0.375 -0.23752378 -0.37752378 -0.375 -0.23752378 -0.37752378 -0.13752379 
+		-0.47499999 -0.61500001 -0.13752379 -0.23752378 0.33500001 -0.13752379 0.23752378 
+		0.097523779 -0.375 0.23752378 0.097523779 -0.13752379 0.47499999 -0.37752378 -0.13752379 
+		0.47499999 -0.37752378 -0.375 0.23752378 -0.61500001 -0.13752379 0.23752378 0.33500001 
+		0.33752367 0.23752378 0.097523779 0.33752367 0.47499999 0.097523779 0.57499999 0.23752378 
+		-0.37752378 0.57499999 0.23752378 -0.37752378 0.33752367 0.47499999 -0.61500001 0.33752367 
+		0.23752378;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -1265,8 +1370,8 @@ createNode mesh -n "ButtonShape11" -p "Button11";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Button12" -p "Numbers";
 	rename -uid "CD114903-4F95-0A09-69F6-A2AA1095B5B3";
-	setAttr ".t" -type "double3" -0.18 0.10000000149011612 -0.06 ;
-	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+	setAttr ".rp" -type "double3" -0.13999999999999999 0.10000000149011612 -0.06 ;
+	setAttr ".sp" -type "double3" -0.13999999999999999 0.10000000149011612 -0.06 ;
 createNode mesh -n "ButtonShape12" -p "Button12";
 	rename -uid "3B7670EF-4F58-D827-CF59-28B6693F61E6";
 	setAttr -k off ".v";
@@ -1300,6 +1405,16 @@ createNode mesh -n "ButtonShape12" -p "Button12";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 24 ".pt[0:23]" -type "float3"  0.097523779 0.57499999 -0.2975238 
+		0.097523779 0.33752367 -0.53500003 0.33500001 0.33752367 -0.2975238 -0.61500001 0.33752367 
+		-0.2975238 -0.37752378 0.33752367 -0.53500003 -0.37752378 0.57499999 -0.2975238 0.33500001 
+		-0.13752379 -0.2975238 0.097523779 -0.13752379 -0.53500003 0.097523779 -0.375 -0.2975238 
+		-0.37752378 -0.375 -0.2975238 -0.37752378 -0.13752379 -0.53500003 -0.61500001 -0.13752379 
+		-0.2975238 0.33500001 -0.13752379 0.17752378 0.097523779 -0.375 0.17752378 0.097523779 
+		-0.13752379 0.41499999 -0.37752378 -0.13752379 0.41499999 -0.37752378 -0.375 0.17752378 
+		-0.61500001 -0.13752379 0.17752378 0.33500001 0.33752367 0.17752378 0.097523779 0.33752367 
+		0.41499999 0.097523779 0.57499999 0.17752378 -0.37752378 0.57499999 0.17752378 -0.37752378 
+		0.33752367 0.41499999 -0.61500001 0.33752367 0.17752378;
 	setAttr -s 24 ".vt[0:23]"  -0.25002503 -0.5 0.25002503 -0.25002503 -0.25002491 0.5
 		 -0.5 -0.25002491 0.25002503 0.5 -0.25002491 0.25002503 0.25002503 -0.25002491 0.5
 		 0.25002503 -0.5 0.25002503 -0.5 0.25002503 0.25002503 -0.25002503 0.25002503 0.5
@@ -1378,7 +1493,7 @@ createNode polyCube -n "polyCube10";
 	rename -uid "2FE92116-49C5-37F6-BEA2-79AA49261D3D";
 	setAttr ".cuv" 4;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "57DF653F-46F6-E5CB-E1BB-50A2C6077283";
+	rename -uid "98BE4114-40B7-C27F-6E1F-F9980059A654";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
@@ -1388,16 +1503,16 @@ createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
 	setAttr ".asp" -type "string" "UsdDefaultRenderSettings,/Render/SceneRenderSettings";
 lockNode -l 1 ;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "F0F3A7E0-4591-5E9E-F40E-73AC0137EBC2";
+	rename -uid "209029B5-4F15-1541-2723-659E61132F19";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "FC913764-4EB1-EAC1-ACAE-17B4B41A7259";
+	rename -uid "25306564-429D-5C98-E70B-D581BEA1E9B4";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "9D928A50-4359-55FD-7844-2690E402B3E1";
+	rename -uid "B615A9D6-4A26-EF19-5F73-E690CBD177CD";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "313189B8-4D9A-CC11-91F5-61AA80EB7516";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F5994BCA-4E46-4114-FF90-51AA4B6234D0";
+	rename -uid "665F1927-4A33-8509-CD9E-ECBCAD3B6643";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "650F1B61-4985-6AE7-DB21-1EB322A41158";
 	setAttr ".g" yes;
@@ -1519,43 +1634,19 @@ createNode polySoftEdge -n "polySoftEdge2";
 createNode polyTweak -n "polyTweak1";
 	rename -uid "F008A422-43D3-2B7D-12E8-008725232E91";
 	setAttr ".uopa" yes;
-	setAttr -s 38 ".tk";
-	setAttr ".tk[24]" -type "float3" 0.01042405 0.0018090289 -0.0092361588 ;
-	setAttr ".tk[25]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[26]" -type "float3" 0.011785389 0.0018090289 -0.0079265628 ;
-	setAttr ".tk[27]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[28]" -type "float3" 0.026953254 0 -0.025916049 ;
-	setAttr ".tk[29]" -type "float3" 0.029760299 0 -0.022591569 ;
-	setAttr ".tk[30]" -type "float3" -0.01042405 0.0018090289 -0.0092361588 ;
-	setAttr ".tk[31]" -type "float3" -0.026953254 0 -0.025916049 ;
-	setAttr ".tk[32]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[33]" -type "float3" -0.011785389 0.0018090289 -0.0079265628 ;
-	setAttr ".tk[34]" -type "float3" -0.029760299 0 -0.022591569 ;
-	setAttr ".tk[35]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[36]" -type "float3" 0.030923016 0 -0.014565575 ;
-	setAttr ".tk[37]" -type "float3" 0.012349274 0.0018090289 -0.0047649136 ;
-	setAttr ".tk[38]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[39]" -type "float3" 0.012349274 0.0018090289 0.0047649136 ;
-	setAttr ".tk[40]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[41]" -type "float3" 0.030923016 0 0.014565575 ;
-	setAttr ".tk[42]" -type "float3" 0.011785389 0.0018090289 0.0079265628 ;
-	setAttr ".tk[43]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[44]" -type "float3" 0.029760299 0 0.022591569 ;
-	setAttr ".tk[45]" -type "float3" 0.026953254 0 0.025916049 ;
-	setAttr ".tk[46]" -type "float3" 0.01042405 0.0018090289 0.0092361588 ;
-	setAttr ".tk[47]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[48]" -type "float3" -0.01042405 0.0018090289 0.0092361588 ;
-	setAttr ".tk[49]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[50]" -type "float3" -0.026953254 0 0.025916049 ;
-	setAttr ".tk[51]" -type "float3" -0.011785389 0.0018090289 0.0079265628 ;
-	setAttr ".tk[52]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[53]" -type "float3" -0.029760299 0 0.022591569 ;
-	setAttr ".tk[54]" -type "float3" -0.012349274 0.0018090289 -0.0047649136 ;
-	setAttr ".tk[55]" -type "float3" 0 0.0045225723 0 ;
-	setAttr ".tk[56]" -type "float3" -0.030923016 0 -0.014565575 ;
-	setAttr ".tk[57]" -type "float3" -0.012349274 0.0018090289 0.0047649136 ;
-	setAttr ".tk[58]" -type "float3" -0.030923016 0 0.014565575 ;
-	setAttr ".tk[59]" -type "float3" 0 0.0045225723 0 ;
+	setAttr -s 36 ".tk[24:59]" -type "float3"  0.01042405 0.0018090289 -0.0092361588
+		 0 0.0045225723 0 0.011785389 0.0018090289 -0.0079265628 0 0.0045225723 0 0.026953254
+		 0 -0.025916049 0.029760299 0 -0.022591569 -0.01042405 0.0018090289 -0.0092361588
+		 -0.026953254 0 -0.025916049 0 0.0045225723 0 -0.011785389 0.0018090289 -0.0079265628
+		 -0.029760299 0 -0.022591569 0 0.0045225723 0 0.030923016 0 -0.014565575 0.012349274
+		 0.0018090289 -0.0047649136 0 0.0045225723 0 0.012349274 0.0018090289 0.0047649136
+		 0 0.0045225723 0 0.030923016 0 0.014565575 0.011785389 0.0018090289 0.0079265628
+		 0 0.0045225723 0 0.029760299 0 0.022591569 0.026953254 0 0.025916049 0.01042405 0.0018090289
+		 0.0092361588 0 0.0045225723 0 -0.01042405 0.0018090289 0.0092361588 0 0.0045225723
+		 0 -0.026953254 0 0.025916049 -0.011785389 0.0018090289 0.0079265628 0 0.0045225723
+		 0 -0.029760299 0 0.022591569 -0.012349274 0.0018090289 -0.0047649136 0 0.0045225723
+		 0 -0.030923016 0 -0.014565575 -0.012349274 0.0018090289 0.0047649136 -0.030923016
+		 0 0.014565575 0 0.0045225723 0;
 createNode polyCube -n "polyCube11";
 	rename -uid "332BAF41-46A1-E3D3-F2EF-4E9840E95C7A";
 	setAttr ".cuv" 4;
@@ -1611,7 +1702,7 @@ createNode polyBevel3 -n "polyBevel6";
 createNode polyTweak -n "polyTweak2";
 	rename -uid "14BF3684-476A-E23D-86E7-668AFDD168A2";
 	setAttr ".uopa" yes;
-	setAttr -s 9 ".tk";
+	setAttr -s 8 ".tk";
 	setAttr ".tk[2]" -type "float3" 0.2305603 0 -0.2305603 ;
 	setAttr ".tk[4]" -type "float3" 0.2305603 0 -0.2305603 ;
 	setAttr ".tk[7]" -type "float3" -0.2305603 0 -0.2305603 ;
@@ -1650,6 +1741,18 @@ createNode polySoftEdge -n "polySoftEdge5";
 	setAttr ".ix" -type "matrix" 0.050000000000000003 0 0 0 0 0.050000000000000003 0 0
 		 0 0 0.050000000000000003 0 0 0.10000000149011612 0 1;
 	setAttr ".a" 180;
+createNode transformGeometry -n "transformGeometry7";
+	rename -uid "8F4B8CEF-4C31-1764-3491-9C8EDE395067";
+	setAttr ".txf" -type "matrix" 0.050000000000000003 0 0 0 0 0.050000000000000003 0 0
+		 0 0 0.10000000000000001 0 0.29999999999999999 0.10000000149011612 0 1;
+createNode transformGeometry -n "transformGeometry8";
+	rename -uid "F2E8AC8A-4069-A654-3C1E-B0A9B6180AF5";
+	setAttr ".txf" -type "matrix" 0.14999999999999999 0 0 0 0 0.050000000000000003 0 0
+		 0 0 0.14999999999999999 0 0.17000000000000001 0.10000000149011612 0 1;
+createNode transformGeometry -n "transformGeometry9";
+	rename -uid "6198C00A-4E1B-491E-AFFA-799236D21664";
+	setAttr ".txf" -type "matrix" 0.050000000000000003 0 0 0 0 0.050000000000000003 0 0
+		 0 0 0.050000000000000003 0 0.040000000000000001 0.10000000149011612 0 1;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -1700,9 +1803,9 @@ select -ne :hardwareRenderGlobals;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
 connectAttr "polySoftEdge2.out" "BaseShape.i";
-connectAttr "polySoftEdge3.out" "ButtonPShape.i";
-connectAttr "polySoftEdge4.out" "ButtonAShape.i";
-connectAttr "polySoftEdge5.out" "ButtonShape2.i";
+connectAttr "transformGeometry7.og" "ButtonPShape.i";
+connectAttr "transformGeometry8.og" "ButtonAShape.i";
+connectAttr "transformGeometry9.og" "ButtonShape2.i";
 connectAttr "polyCube10.out" "transformGeometry5.ig";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -1737,6 +1840,9 @@ connectAttr "polyCube12.out" "polyBevel7.ip";
 connectAttr "ButtonShape2.wm" "polyBevel7.mp";
 connectAttr "polyBevel7.out" "polySoftEdge5.ip";
 connectAttr "ButtonShape2.wm" "polySoftEdge5.mp";
+connectAttr "polySoftEdge3.out" "transformGeometry7.ig";
+connectAttr "polySoftEdge4.out" "transformGeometry8.ig";
+connectAttr "polySoftEdge5.out" "transformGeometry9.ig";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "BaseShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "ButtonPShape.iog" ":initialShadingGroup.dsm" -na;
